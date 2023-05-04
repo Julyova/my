@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Заказ пиццы</title>
+		
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		<h3>Пицца-пицца</h3>
+		<form method="get" action="#">
+			<fieldset>
+				<legend>Заполни форму заказа</legend>
+				<input type="text" name="data1" placeholder="Ваше имя">
+				<br>
+				<select name="address">
+					<option disabled>Город</option>
+					<option>Москва</option>
+					<option>Зеленоград</option>
+					<option>Химки</option>
+					<option>Сходня</option>
+				</select>
+				<br>
+				<textarea name="commet" placeholder="Введите улицу, дом, квартиру"></textarea>
+				<br>
+				<select size="3" name="pizza[]">
+					<option disabled>Выберите пиццу</option>
+					<option value="Маргарита">Маргарита</option>
+					<option value="Гавайская">Гавайская</option>
+					<option value="4 сыра">4 сыра</option>
+					<option value="Мясная">Мясная</option>
+				</select>
+				<br>
+				<p>Выберите подарок за заказ:</p>
+				<p>Вода &nbsp; &nbsp; &nbsp; Сок &nbsp; &nbsp; &nbsp; Морс</p>
+				<input type="radio" name="data2" value="1"> &nbsp; &nbsp; &nbsp; &nbsp;
+				<input type="radio" name="data2" value="2"> &nbsp; &nbsp; &nbsp; &nbsp;
+				<input type="radio" name="data2" value="3"> &nbsp; &nbsp; &nbsp; &nbsp;
+				<br>
+				<p>Поставь галочку, если нужны приборы</p>
+				<input type="checkbox" name="data3" value="1">
+				<br>
+				<br>
+				<button>Отправить заказ</button>
+			</fieldset>
+		</form>
+	</body>
+</html> 

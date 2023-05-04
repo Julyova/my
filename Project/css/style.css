@@ -1,0 +1,32 @@
+﻿@font-face {
+	font-family: Pacifico-Regular;
+	src: url(../fonts/Pacifico-Regular.woff2) format(woff2);
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0%;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	height: 100px;
+	background: blue;
+	flex: none;
+}
+footer {
+	height: 150px;
+	background: gray;
+	flex: none;
+}
+main {
+	flex: 1 1 auto;
+	background: pink;
+}
+
+.copyright {
+	font: 20px Pacifico-Regular;
+	color: rgba(255,255,255,.5)
+}

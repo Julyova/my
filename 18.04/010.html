@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Форма в таблице</title>
+		
+		<meta charset="utf-8">
+		
+		<style>
+		td, th {
+			
+			padding: 5px;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<form action="#" method="get">
+			<table style="border-collapse:collapse; border:1px solid black;">
+				<tr>
+					<th colspan="3">
+						Форма для примера
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<input type="radio" name="radio" value="1" id="first">
+						<br>
+						<br>
+						<input type="radio" name="radio" value="2" id="second">
+						<br>
+						<br>
+						<input type="radio" name="radio" value="3" id="third">
+					</td>
+					<td colspan="2">
+					<label for="first">первая кнопка</label>
+					<br>
+					<br>
+					<label for="second">вторая кнопка</label>
+					<br>
+					<br>
+					<label for="third">третья кнопка</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<label>Левый комментарий</label>
+						<textarea name="left"></textarea>
+					</td>
+					<td>
+						<label>Правый комментарий</label>
+						<textarea name="right"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<label>Выбор варианта</label>
+						<select name="myselect">
+							<option>первый</option>
+							<option>второй</option>
+							<option>третий</option>
+						</select>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th colspan="3">
+						<button type="submit">Отправить</button>
+					</th>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
